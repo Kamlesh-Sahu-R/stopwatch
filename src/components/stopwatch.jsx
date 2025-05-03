@@ -18,12 +18,6 @@ function Stopwatch() {
     return () => clearInterval(interval); // cleanup
   }, [isRunning]);
 
-  // const formatTime = (totalSeconds) => {
-  //   const minutes = String(Math.floor(totalSeconds / 60)).padStart(2, '0');
-  //   const seconds = String(totalSeconds % 60).padStart(2, '0');
-  //   return `${minutes}:${seconds}`;
-  // };
-
   const formatTime = (totalSeconds) => {
     const minutes = Math.floor(totalSeconds / 60);
     const seconds = String(totalSeconds % 60).padStart(2, '0');
