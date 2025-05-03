@@ -35,12 +35,10 @@ function Stopwatch() {
 
   return (
     <div >
-        <h1>Stopwatch</h1>
+      <h1>Stopwatch</h1>
       <h4>Time: {formatTime(timer)}</h4>
       <div>
-        <button onClick={handleStartStop} >
-          {isRunning ? 'Stop' : 'Start'}
-        </button>
+        <button onClick={handleStartStop} >{isRunning ? 'Stop' : 'Start'}</button>
         <button onClick={handleReset} >Reset</button>
       </div>
     </div>
